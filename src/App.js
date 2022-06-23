@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './assets/imagenes/logo.svg';
+import './assets/css/App.css';
+// importar componentes 
+import MiComponente from './components/micomponente';
+
+function holamundo(nombre, edad){
+  var presentacion=<div>
+      <h2>hola soy {nombre} </h2>
+      <h2>tengo {edad} años</h2>
+  </div>
+  return presentacion;
+}
 
 function App() {
+  var nombre = "oliver de la rosa ";
+  
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          hola bienvenido al curso de react de oliver de la rosa 
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {holamundo(nombre, 12)}
+        <section className='componentes'>
+      <MiComponente />
+      </section>
       </header>
+     
     </div>
   );
 }
