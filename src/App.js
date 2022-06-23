@@ -19,7 +19,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          hola bienvenido al curso de react de oliver de la rosa 
+          Hola bienvenido al curso de react de oliver de la rosa 
         </p>
         {holamundo(nombre, 12)}
         <section className='componentes'>
